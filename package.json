@@ -1,7 +1,7 @@
 {
   "name": "VideoChain",
   "version": "0.1.0",
-  "description": "Decentralized platform for video publishing",
+  "description": "Decentralized platform for video management",
   "author": "Neel Patel",
   "homepage": ".",
   "dependencies": {
