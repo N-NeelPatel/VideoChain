@@ -1,4 +1,3 @@
-import { Button } from "bootstrap";
 import React, { Component } from "react";
 
 class Main extends Component {
@@ -26,7 +25,7 @@ class Main extends Component {
             </h3>
           </div>
           <div
-            className="col-md-2 overflow-auto text-center"
+            className="col-md-2 border border-danger overflow-auto text-center"
             style={{ maxHeight: "768px", minWidth: "175px" }}
           >
             <h5>
