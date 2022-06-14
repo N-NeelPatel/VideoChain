@@ -16,12 +16,7 @@ contract DVideo {
     }
 
     // Event for videoUpload
-    event VideoUploaded{
-      uint256 id;
-      string hash;
-      string title;
-      address author;
-    };
+    event VideoUploaded(uint256 id, string hash, string title, address author);
 
     constructor() public {}
 
@@ -35,11 +30,11 @@ contract DVideo {
         // uploader address should exists
         require(msg.sender != address(0));
 
-        videoCount++;        
+        videoCount++;
 
         // Add video to the contract
         Videos[videoCount] = Video(videoCount, _videoHash, _title, msg.sender);
-        
+
         // Trigger an event
         emit VideoUploaded(videoCount, _videoHash, _title, msg.sender);
     }
